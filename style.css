@@ -1,0 +1,210 @@
+/* Styling for main pieces */
+
+header {
+  background-color:dimgray;
+  font-family: "Comic Sans MS";
+  margin-bottom: 40px;
+}
+
+body {
+  background-color:lightgray;
+  color:#02182B;
+  font-family: "Comic Sans MS";
+}
+
+.logo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 72px;
+  color:antiquewhite;
+  text-align: center;
+  letter-spacing: -4;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+/* Navigation */
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+}
+
+@media all and (mid-width: 700px) {
+  header {
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 42px;
+  }
+
+  header nav {
+    margin-top: 14px;
+  }
+}
+
+/* Groups */
+
+main {
+  padding: 20px 0;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+section.dark-background {
+  background-color:cornsilk;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 50px;
+}
+
+footer {
+  background-color: dimgray;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+/* Text styling */
+
+h1 {
+  font-size: 28px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  color: dimgray; 
+}
+
+h2 {
+  font-size: 26px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  font-family:'Times New Roman', Times, serif;
+  line-height: 1.5em;
+  margin-bottom: 0;
+}
+
+main a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+main a:link { color:maroon; }
+main a:visited { color:maroon; }
+main a:hover { color:navy; }
+a:active { color:navy; }
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  color:antiquewhite;
+  text-align: center;
+  padding: 20px;
+}
+
+main img {
+  width: 100%;
+}
+
+img.image-enhanced {
+  height: 90%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+img.porsche {
+  display: block;
+  width: 75%;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.porsche-text {
+  text-align: center;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* Desktop Styling */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+}
+
+
+/* Contact Form Styling */
+
+form {
+  padding-right: 10px;
+}
+
+form label {
+  display: block;
+}
+
+form input,
+form texarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+  width: 100%;
+}
